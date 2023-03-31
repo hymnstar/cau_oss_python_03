@@ -4,23 +4,30 @@ H = float(input("높이: "))
 
 V = W * D * H
 
-print("total lenght: %f" %V)
+if (V < 0):
+    print("Error has occurred. Close the program.")
 
-print("Do you want to calculate the bill? Enter Y/N")
-answer = str(input())
-
-if (answer = N):
-    print("Exit the program.")
+elif (V > 120):
+    print("It's too heavy.")
 
 else:
-    if (V <= 80):
-        print("5$")
+    print("total lenght: %f" %V)
 
-    elif (80 < V <= 100):
-        print("8$")
+    print("Do you want to calculate the bill? Enter Y/N")
+    answer = str(input())
 
-    elif (100 < V <= 120):
-        print("10$")
+    if (answer == "N"):
+        print ("Exit the program.")
 
     else:
-        print("It's too heavy)
+        if (V <= 80):
+            print("5$")
+
+        elif (80 < V <= 100):
+            print("8$")
+
+        elif (100 < V <= 120):
+            print("10$")
+
+
+
